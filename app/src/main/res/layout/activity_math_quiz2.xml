@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Math_Quiz2">
+
+    <RadioButton
+        android:id="@+id/answer_d"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_x="67dp"
+        android:layout_y="398dp"
+        android:text="D: None of the above" />
+
+    <RadioButton
+        android:id="@+id/answer_c"
+        android:layout_width="212dp"
+        android:layout_height="75dp"
+        android:layout_x="66dp"
+        android:layout_y="313dp"
+        android:text="C:0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="266dp"
+        android:layout_height="263dp"
+        android:layout_x="69dp"
+        android:layout_y="68dp"
+        android:text="Question 2: WHat is the derivative of 3x - 7  "
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <RadioButton
+        android:id="@+id/answer_b"
+        android:layout_width="216dp"
+        android:layout_height="76dp"
+        android:layout_x="59dp"
+        android:layout_y="229dp"
+        android:text="B: 3x^2 - 7" />
+
+    <RadioButton
+        android:id="@+id/answer_a"
+        android:layout_width="215dp"
+        android:layout_height="74dp"
+        android:layout_x="55dp"
+        android:layout_y="140dp"
+        android:text="A: 3" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="112dp"
+        android:layout_y="497dp"
+        android:text="Submit" />
+</AbsoluteLayout>

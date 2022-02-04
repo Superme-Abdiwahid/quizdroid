@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Physics_Quiz">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="368dp"
+        android:layout_x="13dp"
+        android:layout_y="83dp"
+        android:text="Welcome to this physics. This quiz is about physics this quiz
+will assess your various technquies to solve some physics problems. Topics range from pre physics all the way up to enginerring physics
+There will be a total of 10-20 questions all randomzied. Please dont get help or support please make sure your the one taking this.
+Press the begin button. To start taking your quiz." />
+
+    <Button
+        android:id="@+id/physics_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="133dp"
+        android:layout_y="515dp"
+        android:text="Begin Quiz" />
+
+</AbsoluteLayout>

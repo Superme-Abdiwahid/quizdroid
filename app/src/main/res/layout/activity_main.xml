@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="93dp">
+
+    <Button
+        android:id="@+id/super_hero_quiz"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_x="96dp"
+        android:layout_y="357dp"
+        android:text="Super_Heros"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <Button
+        android:id="@+id/physics_quiz"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_x="99dp"
+        android:layout_y="272dp"
+        android:text="Physics"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="231dp"
+        android:layout_height="93dp"
+        android:layout_x="63dp"
+        android:layout_y="14dp"
+        android:background="#FFFFFF"
+        android:text="Welcome to this quiz.  Choose a topic to take the quiz about that topic"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/math_quiz"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_x="94dp"
+        android:layout_y="188dp"
+        android:text="Math"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="149dp" />
+</AbsoluteLayout>
