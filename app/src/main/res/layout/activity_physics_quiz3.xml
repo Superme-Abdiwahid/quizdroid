@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Physics_Quiz3">
+
+    <Button
+        android:id="@+id/go_back"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_x="134dp"
+        android:layout_y="558dp"
+        android:text="Go_Back" />
+
+    <RadioButton
+        android:id="@+id/answer_d"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_x="95dp"
+        android:layout_y="383dp"
+        android:text="D: None of the above" />
+
+    <RadioButton
+        android:id="@+id/answer_c"
+        android:layout_width="212dp"
+        android:layout_height="75dp"
+        android:layout_x="88dp"
+        android:layout_y="292dp"
+        android:text="C:0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="266dp"
+        android:layout_height="263dp"
+        android:layout_x="69dp"
+        android:layout_y="68dp"
+        android:text="Question 3: What is 0 * e^x + e^x * Infinity  "
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <RadioButton
+        android:id="@+id/answer_b"
+        android:layout_width="216dp"
+        android:layout_height="76dp"
+        android:layout_x="80dp"
+        android:layout_y="205dp"
+        android:text="B: 3x^2 - 7" />
+
+    <RadioButton
+        android:id="@+id/answer_a"
+        android:layout_width="215dp"
+        android:layout_height="74dp"
+        android:layout_x="76dp"
+        android:layout_y="118dp"
+        android:text="A: 3" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="132dp"
+        android:layout_y="482dp"
+        android:text="Finish Quiz" />
+
+</AbsoluteLayout>
