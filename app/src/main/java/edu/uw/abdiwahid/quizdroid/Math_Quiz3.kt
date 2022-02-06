@@ -25,28 +25,41 @@ class Math_Quiz3 : AppCompatActivity() {
 
         var go_back: Button = findViewById<Button>(R.id.go_back)
 
+        var finish_quiz: Button = findViewById<Button>(R.id.submit_button)
+
+        finish_quiz.isEnabled = false;
+
+
+        finish_quiz.setOnClickListener(){
+
+        }
+
 
         answer_a.setOnClickListener(){
             submit_button.isEnabled = true;
+            finish_quiz.isEnabled = true;
         }
 
         answer_b.setOnClickListener(){
             submit_button.isEnabled = true;
+            finish_quiz.isEnabled = true;
 
         }
 
         answer_c.setOnClickListener(){
             submit_button.isEnabled = true;
+            finish_quiz.isEnabled = true;
 
         }
 
         answer_d.setOnClickListener(){
             submit_button.isEnabled = true;
+            finish_quiz.isEnabled = true;
 
         }
 
         submit_button.setOnClickListener(){
-            val intent = Intent(this@Math_Quiz3, Math_Quiz3::class.java)
+            val intent = Intent(this@Math_Quiz3, Quiz_Results::class.java)
             startActivity(intent)
         }
 
