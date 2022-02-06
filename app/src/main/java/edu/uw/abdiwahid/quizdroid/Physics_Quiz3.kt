@@ -52,5 +52,9 @@ class Physics_Quiz3 : AppCompatActivity() {
             val intent = Intent(this@Physics_Quiz3, MainActivity::class.java)
             startActivity(intent)
         }
+        submit_button.setOnClickListener(){
+            val intent = Intent(this@Physics_Quiz3, Quiz_Results::class.java)
+            startActivity(intent)
+        }
     }
 }
