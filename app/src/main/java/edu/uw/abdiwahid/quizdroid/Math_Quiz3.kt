@@ -20,6 +20,7 @@ class Math_Quiz3 : AppCompatActivity() {
 
         var answer_c: RadioButton = findViewById<RadioButton>(R.id.answer_c)
 
+
         var answer_d: RadioButton = findViewById<RadioButton>(R.id.answer_d)
 
 
