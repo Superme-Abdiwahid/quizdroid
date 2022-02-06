@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizdroid">
         <activity
+            android:name=".Quiz_Results"
+            android:exported="false" />
+        <activity
+            android:name=".Super_Hero_Quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".Super_Hero_Quiz"
+            android:exported="false" />
+        <activity
             android:name=".Physics_Quiz3"
             android:exported="false" />
         <activity
@@ -28,9 +37,6 @@
             android:exported="false" />
         <activity
             android:name=".Math_Quiz"
-            android:exported="false" />
-        <activity
-            android:name=".Super_Hero_Quiz"
             android:exported="false" />
         <activity
             android:name=".Physics_Quiz"
