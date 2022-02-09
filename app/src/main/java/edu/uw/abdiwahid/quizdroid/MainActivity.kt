@@ -45,9 +45,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressWarnings("unchecked")
-    data class QuizTopics(val title: String, val takeQuiz: String, val other: String, val questions:List<Question>, val topicChoice: Int)
+    data class QuizTopics(val title: String, val takeQuiz: String, val other: String, val questions:List<Question>, val topicChoice: String)
 
-    data class Question(val numQuestions: String, val answerOptions: Array<String>, val answers: Int)
+    data class Question(val numQuestions: String, val answerOptions: Array<String>, val answers: Any)
 
     abstract class Quiz : Repositry {
         var read = LinkedList<QuizTopics>()
