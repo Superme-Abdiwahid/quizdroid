@@ -25,7 +25,7 @@ class Super_Hero_Quiz2 : AppCompatActivity() {
 
         var submit: Button = findViewById(R.id.submit_button)
         var submit_button: Button = findViewById<Button>(R.id.submit_button)
-
+        submit_button.isEnabled = false;
 
         submit.setOnClickListener(){
 

@@ -30,6 +30,7 @@ class Super_Hero_Quiz1 : AppCompatActivity() {
 
         var submit_button: Button = findViewById<Button>(R.id.submit_button)
 
+        submit_button.isEnabled = false;
         submit.setOnClickListener(){
             var intent = Intent(this@Super_Hero_Quiz1, Super_Hero_Quiz2::class.java)
             startActivity(intent)
