@@ -3,12 +3,21 @@ package edu.uw.abdiwahid.quizdroid
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Environment
+import android.util.JsonReader
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
+import org.json.JSONArray
+import org.json.JSONObject
+import org.json.JSONStringer
+import java.io.*
 import java.util.*
 import kotlin.collections.HashMap
 
 class MainActivity : AppCompatActivity() {
+    var arr = arrayListOf<String>()
+    lateinit var name:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,32 +31,57 @@ class MainActivity : AppCompatActivity() {
         var super_hero_Quiz: Button = findViewById<Button>(R.id.super_hero_quiz)
 
 
-        math_quiz.setOnClickListener(){
-            val intent = Intent(this@MainActivity, Quiz_Overview::class.java)// first argument is the context
+
+
+        math_quiz.setOnClickListener() {
+            val intent =
+                Intent(this@MainActivity, Quiz_Overview::class.java)// first argument is the context
             startActivity(intent)  // send the intent
         }
 
-        physics_Quiz.setOnClickListener(){
+        physics_Quiz.setOnClickListener() {
             val intent = Intent(this@MainActivity, Physics_Quiz::class.java)// first argument is the context
             startActivity(intent)  // send the intent
         }
 
-        super_hero_Quiz.setOnClickListener(){
-            val intent = Intent(this@MainActivity, Super_Hero_Quiz::class.java)// first argument is the context
+        super_hero_Quiz.setOnClickListener() {
+            val intent = Intent(
+                this@MainActivity,
+                Super_Hero_Quiz::class.java
+            )// first argument is the context
             startActivity(intent)  // send the intent
         }
+
+
+
+        fun find(){
+            val fil = filesDir
+        }
+     //   readjson()
+
     }
+
     @SuppressWarnings("depcreated")
-    interface Repositry{
+    interface Repositry {
         fun addQuiz(topic: QuizTopics)
         fun getRepository(): LinkedList<QuizTopics>
         fun delete(topic: QuizTopics)
     }
 
     @SuppressWarnings("unchecked")
-    data class QuizTopics(val title: String, val takeQuiz: String, val other: String, val questions:List<Question>, val topicChoice: String)
+    data class QuizTopics(
+        val title: String,
+        val takeQuiz: String,
+        val other: String,
+        val questions: Array<Question>,
+        val topicChoice: Int
+    )
 
-    data class Question(val numQuestions: String, val answerOptions: Array<String>, val answers: Any)
+    data class Question(
+        val numQuestions: String,
+        val answerOptions: Array<String>,
+        val answers: Any
+    )
 
     abstract class Quiz : Repositry {
         var read = LinkedList<QuizTopics>()
@@ -56,7 +90,7 @@ class MainActivity : AppCompatActivity() {
             read.add(topic)
             read.addAll(read);
             Log.d("MAIN_ACTIVITY", read.toString())
-            if(!map.containsKey("MAIN_ACTIVITY")){
+            if (!map.containsKey("MAIN_ACTIVITY")) {
                 map.put("MAIN_ACTIVITY", "Quiz_Data");
             }
 
@@ -71,5 +105,11 @@ class MainActivity : AppCompatActivity() {
             map.putAll(map);
             return read;
         }
+
+        fun readJSON() {
+
+
+        }
     }
+
 }

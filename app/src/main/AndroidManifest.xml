@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizdroid">
         <activity
+            android:name=".Read_FromJSON"
+            android:exported="false" />
+        <activity
             android:name=".Answers"
             android:exported="false" />
         <activity
@@ -17,6 +20,10 @@
             android:exported="false" />
         <activity
             android:name=".Super_Hero_Quiz2"
+            android:exported="false" />
+
+        <activity
+            android:name=".Super_Hero_Quiz1"
             android:exported="false" />
         <activity
             android:name=".Super_Hero_Quiz"
