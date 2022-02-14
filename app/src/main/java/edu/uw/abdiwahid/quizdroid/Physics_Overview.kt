@@ -17,4 +17,5 @@ class Physics_Quiz : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

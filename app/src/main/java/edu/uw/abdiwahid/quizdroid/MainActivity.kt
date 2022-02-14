@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
         math_quiz.setOnClickListener() {
             val intent =
                 Intent(this@MainActivity, Quiz_Overview::class.java)// first argument is the context

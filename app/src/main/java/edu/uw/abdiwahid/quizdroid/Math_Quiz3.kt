@@ -53,6 +53,7 @@ class Math_Quiz3 : AppCompatActivity() {
 
         }
 
+
         answer_d.setOnClickListener(){
             submit_button.isEnabled = true;
             finish_quiz.isEnabled = true;

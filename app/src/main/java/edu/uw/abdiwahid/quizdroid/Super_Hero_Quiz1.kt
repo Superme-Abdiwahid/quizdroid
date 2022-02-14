@@ -19,6 +19,7 @@ class Super_Hero_Quiz1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_super_hero_quiz2)
 
+
         val text: TextView = findViewById<TextView>(R.id.textView3)
         var answer_a: RadioButton = findViewById<RadioButton>(R.id.answer_a)
         var answer_b: RadioButton = findViewById<RadioButton>(R.id.answer_b)
@@ -42,7 +43,6 @@ class Super_Hero_Quiz1 : AppCompatActivity() {
                 val inputStream: InputStream = assets.open("Quiz.JSON");
 
                 json = inputStream.bufferedReader().use {it.readText() }
-
 
                 var jsonArray = JSONArray(json)
                 for(i in 0..jsonArray.length() - 1){

@@ -23,6 +23,7 @@ class Math_Quiz2 : AppCompatActivity() {
         var answer_d: RadioButton = findViewById<RadioButton>(R.id.answer_d)
 
 
+
         answer_a.setOnClickListener(){
             submit_button.isEnabled = true;
         }

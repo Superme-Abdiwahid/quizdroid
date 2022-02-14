@@ -50,6 +50,7 @@ class Math_Quiz : AppCompatActivity() {
                     var list = arrayListOf<String>()
 
                 }
+
                 val obj = JSONArray(json)
                 var left = obj.getJSONObject(2).getJSONArray("questions").getJSONObject(0)
                 for (i in 0..left.length()) {

@@ -52,6 +52,7 @@ fun parseJSON() {
             left = obj.getJSONObject(0).getJSONArray("questions").getJSONObject(0)
 
 
+
             var left2 = obj.getJSONObject(0).getJSONArray("questions").getJSONObject(0)
             question = left.getString("text");
             text.setText(question)

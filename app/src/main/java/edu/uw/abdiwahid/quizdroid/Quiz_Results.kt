@@ -11,6 +11,7 @@ class Quiz_Results : AppCompatActivity() {
         setContentView(R.layout.activity_quiz_results)
 
 
+
         var button: Button = findViewById<Button>(R.id.button2)
 
         button.setOnClickListener(){

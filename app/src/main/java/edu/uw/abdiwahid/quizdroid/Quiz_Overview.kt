@@ -11,7 +11,6 @@ class Quiz_Overview : AppCompatActivity() {
         setContentView(R.layout.activity_quiz_overview)
         var button: Button = findViewById<Button>(R.id.math)
 
-
         button.setOnClickListener(){
             val intent = Intent(this@Quiz_Overview, Math_Quiz::class.java)
             startActivity(intent)

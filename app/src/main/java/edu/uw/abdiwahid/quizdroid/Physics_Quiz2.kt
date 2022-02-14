@@ -45,6 +45,8 @@ class Physics_Quiz2 : AppCompatActivity() {
 
         }
 
+
+
         submit_button.setOnClickListener(){
             var intent = Intent(this@Physics_Quiz2, Physics_Quiz3::class.java)
             startActivity(intent)

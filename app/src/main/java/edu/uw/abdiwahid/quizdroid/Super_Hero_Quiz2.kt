@@ -31,6 +31,8 @@ class Super_Hero_Quiz2 : AppCompatActivity() {
 
         }
 
+
+
         fun readjson() {
             val fil = filesDir
             Log.i("MAIN_ACTIVITY", fil.absolutePath)

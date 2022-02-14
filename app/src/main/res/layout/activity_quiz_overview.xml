@@ -15,7 +15,7 @@
         android:text="Welcome to this quiz. This quiz is about Math this quiz
 will assess your various technquies to solve some math problems. Topics range from pre algebra all the way up to differential equations + Linear algebra.
 There will be a total of 10-20 questions all randomzied. Please dont get help or support please make sure your the one taking this.
-Press the begin button. To start taking your quiz." />
+Press the begin button. To start taking your quiz."  />
 
     <Button
         android:id="@+id/math"

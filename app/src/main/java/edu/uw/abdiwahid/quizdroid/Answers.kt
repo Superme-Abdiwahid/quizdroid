@@ -27,6 +27,7 @@ class Answers : AppCompatActivity() {
 
     data class Question(val numQuestions: String, val answerOptions: Array<String>, val answers: Int)
 
+
     abstract class Quiz : Repositry {
         var read = LinkedList<QuizTopics>()
         var map = HashMap<String, String>();
