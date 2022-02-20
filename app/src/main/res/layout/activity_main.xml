@@ -11,10 +11,12 @@
     <Button
         android:id="@+id/retry"
         android:layout_width="185dp"
+
         android:layout_height="44dp"
         android:layout_x="109dp"
         android:layout_y="640dp"
         android:text="Retry Download"
+
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="431dp" />
 

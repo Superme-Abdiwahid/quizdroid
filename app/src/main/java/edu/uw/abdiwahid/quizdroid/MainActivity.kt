@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
 
                 toast.show()
                 var t = thread {
+
+                    //
                     textView.setText("Starting the downloading from JSON FILE")
                     val server = URL("http://tednewardsandbox.site44.com/questions.json")
 
